@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Food Lab</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta http-equiv="Refresh" content="10; url = about.html"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="lib/css/style.css" />
+  <!--BootStrab Library for Javascript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js"></script>
+  <!--BootStrab Library for CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--fonts-->
+  <!-- this is font awsome library -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+<!--Link firebase Data base-->
+
+<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDk-dVZNuz-7on8a1N9k1O-jC2qswV3TlM",
+    authDomain: "foodlab-ed00d.firebaseapp.com",
+    databaseURL: "https://foodlab-ed00d.firebaseio.com",
+    projectId: "foodlab-ed00d",
+    storageBucket: "",
+    messagingSenderId: "484504418040"
+  };
+  firebase.initializeApp(config);
+</script>
+<!-- the end of Link firebase Data base-->
+</head>
+
+<body>
+  <!--navigation-->    
+  <div id="menu">
+      <ul>
+        <li><a style="color:white" href="index.html">Hom<span class="space">e</span></a></li>
+        <li><a style="color:white" href="about.html">About U<span class="space">s</span></a></li>
+        <li><a style="color:white" href="contact.html">Sign U<span class="space">p</span></a></li>
+        <li><a style="color:white" href="rest.html">Daily Schedul<span class="space">e</span></a></li>
+      </ul>
+  </div> 
+  <div class="navT">
+    <div class="icon"></div>
+  </div>
+  <!--navigation ends-->
+    
+  <!--main content-->
+  <div class="content" id="content_indexphoto">
+    <div class="first first_home" >
+            <!--left column-->
+            <div id="left_container">
+              <ul class="rolldown-list" id="myList">
+                  <div class="meow3"><li ><strong>List of Restaurant</strong> </li></div>
+                  <br>
+                 
+                     
+                <li><a style="color:black; font-weight: bold;" href="https://www.yelp.com/biz/cara-mia-restaurant-queens-village-2" target="newtab">Cara Mia Restaurant</a>
+                  <hr style="color: yellow; width: 100%;">
+                  <div class="meow">
+                  <div class="meow2"  style="border: 2px solid black; border-radius: 10px;  box-shadow: 5px 5px black;">
+                  <h4>Italian restaurant</h4>
+                  <hr style="width: 470px; color: black;">
+                  <p>Lorem ipsum dolor sit amet, ne minim possit mei. Ea mea molestie vdvdvdvvdv, vsdvdkvhdvkvd, dvhdvdkv id idque malis choro pro, ea nonumes facilis fastidii qui. Per ne rationibus voluptatum, no partem fabulas pri, vix ut nonumy disputando. Ad postea nominavi liberavisse usu, ei mei veri vivendo deseruisse. Viris ignota prodesset ius ad, ullum epicuri efficiendi at nam.
+
+                    </div>
+                  <div class="meow2">
+                    <img   style="width: 500px; height: 500px; border: 2px solid black; border-radius: 50%;" src="0food.jpg">
+                  </div>
+                </div> 
+                </li>
+                
+                <li><a style="color:black; font-weight: bold;" href="https://www.yelp.com/biz/szechuan-kitchen-queens-village" target="newtab">Szechuan Kitchen</a>
+                  <hr style="color: yellow; width: 100%;">
+                  <div class="meow">
+                  <div class="meow2"  style="border: 2px solid black; border-radius: 10px;  box-shadow: 5px 5px black;">
+                  <h4>Italian restaurant</h4>
+                  <hr style="width: 470px; color: black;">
+                  <p>Lorem ipsum dolor sit amet, ne minim possit mei. Ea mea molestie vdvdvdvvdv,vsdvdkvhdvkvd,dvhdvdkv id idque malis choro pro, ea nonumes facilis fastidii qui. Per ne rationibus voluptatum, no partem fabulas pri, vix ut nonumy disputando. Ad postea nominavi liberavisse usu, ei mei veri vivendo deseruisse. Viris ignota prodesset ius ad, ullum epicuri efficiendi at nam.
+
+                    </div>
+                  <div class="meow2">
+                    <img   style="width: 500px; height: 500px; border: 2px solid black; border-radius: 50%;" src="1food.jpg">
+                  </div>
+                </div> 
+                </li>
+                
+                <li><a style="color:black; font-weight: bold;" href="https://www.yelp.com/biz/sapore-di-casa-pizzeria-and-restaurant-oakland-gardens-2" target="newtab">Sapore di Casa Pizza & Restaurant</a>
+                  <hr style="color: yellow; width: 100%;">
+                  <div class="meow">
+                  <div class="meow2"  style="border: 2px solid black; border-radius: 10px;  box-shadow: 5px 5px black;">
+                  <h4>Italian restaurant</h4>
+                  <hr style="width: 470px; color: black;">
+                  <p>Lorem ipsum dolor sit amet, ne minim possit mei. Ea mea molestie vdvdvdvvdv,vsdvdkvhdvkvd,dvhdvdkv id idque malis choro pro, ea nonumes facilis fastidii qui. Per ne rationibus voluptatum, no partem fabulas pri, vix ut nonumy disputando. Ad postea nominavi liberavisse usu, ei mei veri vivendo deseruisse. Viris ignota prodesset ius ad, ullum epicuri efficiendi at nam.
+
+                    </div>
+                  <div class="meow2">
+                    <img   style="width: 500px; height: 500px; border: 2px solid black; border-radius: 50%;" src="2food.jpg">
+                  </div>
+                </div> 
+                </li>
+              
+                <li><a style="color:black; font-weight: bold;" href="https://www.yelp.com/biz/stauntons-irish-peruvian-bar-restaurant-oakland-gardens" target="newtab">Staunton's Bar & Restaurant</a>
+                  <hr style="color: yellow; width: 100%;">
+                  <div class="meow">
+                  <div class="meow2"  style="border: 2px solid black; border-radius: 10px;  box-shadow: 5px 5px black;">
+                  <h4>Italian restaurant</h4>
+                  <hr style="width: 470px; color: black;">
+                  <p>Lorem ipsum dolor sit amet, ne minim possit mei. Ea mea molestie vdvdvdvvdv,vsdvdkvhdvkvd,dvhdvdkv id idque malis choro pro, ea nonumes facilis fastidii qui. Per ne rationibus voluptatum, no partem fabulas pri, vix ut nonumy disputando. Ad postea nominavi liberavisse usu, ei mei veri vivendo deseruisse. Viris ignota prodesset ius ad, ullum epicuri efficiendi at nam.
+
+                    </div>
+                  <div class="meow2">
+                    <img   style="width: 500px; height: 500px; border: 2px solid black; border-radius: 50%;" src="3food.jpg">
+                  </div>
+                </div> 
+                </li>
+                <li><a style="color:black; font-weight: bold;" href="https://www.yelp.com/biz/china-king-queens-village" target="newtab">China King</a>
+                  <hr style="color: yellow; width: 100%;">
+                  <div class="meow">
+                  <div class="meow2"  style="border: 2px solid black; border-radius: 10px;  box-shadow: 5px 5px black;">
+                  <h4>Italian restaurant</h4>
+                  <hr style="width: 470px; color: black;">
+                  <p>Lorem ipsum dolor sit amet, ne minim possit mei. Ea mea molestie vdvdvdvvdv,vsdvdkvhdvkvd,dvhdvdkv id idque malis choro pro, ea nonumes facilis fastidii qui. Per ne rationibus voluptatum, no partem fabulas pri, vix ut nonumy disputando. Ad postea nominavi liberavisse usu, ei mei veri vivendo deseruisse. Viris ignota prodesset ius ad, ullum epicuri efficiendi at nam.
+
+                    </div>
+                  <div class="meow2">
+                    <img   style="width: 500px; height: 500px; border: 2px solid black; border-radius: 50%;" src="4food.jpg">
+                  </div>
+                </div> 
+                </li>
+              </ul> 
+            </div>
+            
+            <!--right column-->
+           <div class="mapouter"><div class="gmap_canvas"><iframe width="1750" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=business%20technology%20early%20college%20high%20school&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de"></a></div><style>.mapouter{text-align:right;height:500px;width:1700px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1700px;}</style></div>
+          
+         
+      
+    </div>
+    <!-- <div id="second">
+        
+       
+      
+    </div> -->
+    <div id="third" class="krsha">
+    <!--footer-->
+    
+    <footer class="main_footer">
+      <hr>
+      <ul class="icons">
+        <!-- I just added google website to test it working or not. we will change that later-->
+        <a href="https://www.facebook.com/ZtechNetwork"> <li><i class="fa fa-facebook"></i></li></a>
+        <a href="https://github.com/ZtechNetwork"><li><i href="" class="fa fa-github"></i></li></a>
+        <a href="https://www.linkedin.com/company/ztechnetwork/"><li><i class="fa fa-linkedin"></i></li></a>
+        <a href="mailto:ztechnetwork.inc@gmail.com?Subject=Food%20Lab" target="newtab"><li><i class="fa fa-envelope"></i></li></a>
+      </ul>        
+    </footer>
+    <!--footer ends-->
+    
+    </div>
+   </div>
+    <!--main content ends-->
+    
+<script src="lib/js/main.js"></script>
+      
+</body>
+</html>

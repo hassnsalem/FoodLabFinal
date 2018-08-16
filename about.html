@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Food Lab</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta http-equiv="Refresh" content="10; url = about.html"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="lib/css/style.css" />
+  <!--BootStrab Library for Javascript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js"></script>
+  <!--BootStrab Library for CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--fonts-->
+  <!-- this is font awsome library -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+<!--Link firebase Data base-->
+
+<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDk-dVZNuz-7on8a1N9k1O-jC2qswV3TlM",
+    authDomain: "foodlab-ed00d.firebaseapp.com",
+    databaseURL: "https://foodlab-ed00d.firebaseio.com",
+    projectId: "foodlab-ed00d",
+    storageBucket: "",
+    messagingSenderId: "484504418040"
+  };
+  firebase.initializeApp(config);
+</script>
+<!-- the end of Link firebase Data base-->
+</head>
+
+<body>
+  <!--navigation-->    
+  <div id="menu">
+      <ul>
+        <li><a style="color:white" href="index.html">Hom<span class="space">e</span></a></li>
+        <li><a style="color:white" href="about.html">About U<span class="space">s</span></a></li>
+        <li><a style="color:white" href="contact.html">Sign U<span class="space">p</span></a></li>
+        <li><a style="color:white" href="rest.html">Daily Schedul<span class="space">e</span></a></li>
+      </ul>
+  </div> 
+  <div class="navT">
+    <div class="icon"></div>
+  </div>
+  <!--navigation ends-->
+    
+  <div class="content">
+      <div id="first">
+            <div class="container" style="padding-top:200px;margin-bottom:48px; margin-left: 100px;">
+                    <div class="row">
+                        <div class="team">
+                            <div class="teamimg">
+                                <img src="0.jpg" style="width: 170px; height: 175px; border-radius: 50%; border: 2px solid black;" alt="" >
+                            </div>
+                            <h4 style="text-align:center;margin-bottom: 2px;margin-top: 25px;">Bryan</h4>
+                            <p style="text-align:center;">Software Engineer</p>
+                            <p style="text-align:center;margin-top: -14px;margin-bottom:-8px;padding:23px;">Hello my name is Bryan Gonzalez and i was the software engineer in creating the food lab
+web app. i mostly dealt with getting the google api to work.</p>
+                            <div class="teamsocial">
+                                <ul>
+                                    <li style="margin-left:35px;float:left;list-style: none outside none;">
+                                        <a href="https://www.facebook.com/bryan.gonzalez.7564129" title="Facebook">
+                                            <div class="facebook-team">
+                                                <i class="fa fa-facebook"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li style="float:left;list-style: none outside none;">
+                                        <a href="https://www.linkedin.com/in/bryan-gonzalez-116404163/" title="LinkedIn">
+                                            <div class="linkedin-team"><i class="fa fa-linkedin"></i></div>
+                                        </a>
+                                    </li>
+                                    <li style="float:left;list-style: none outside none;">
+                                        <a href="https://github.com/Bryan0513" title="Github">
+                                            <div class="github-team">
+                                                <i class="fa fa-github"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li style="float:left;list-style: none outside none;">
+                                        <a href="#" title="Twitter">
+                                            <div class="twitter-team">
+                                                <i class="fa fa-twitter"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team">
+                             <div class="teamimg">
+                                    <img src="1.jpg" style="width: 170px; height: 175px; border-radius: 50%;border: 2px solid black;" alt="" >
+                             </div>
+                            <h4 style="text-align:center;margin-bottom: 2px;margin-top: 25px;">El-Hassn </h4>
+                            <p style="text-align:center;">Back-end Developer</p>
+                            <p style="text-align:center;margin-top: -14px;margin-bottom:-8px;padding:23px;">I was intrested in the project a few days ago and so i jumped on the opportunity and helped create all the pages functionality of the multiple pages.</p>
+                            <div class="teamsocial">
+                                <ul>
+                                    <li style="margin-left:35px;float:left;list-style: none outside none;">
+                                        <a href="#" title="Facebook">
+                                            <div class="facebook-team">
+                                                <i class="fa fa-facebook"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li style="float:left;list-style: none outside none;">
+                                        <a href="https://www.linkedin.com/in/el-hassn-salem-5043bb152/" title="LinkedIn">
+                                            <div class="linkedin-team"><i class="fa fa-linkedin"></i></div>
+                                        </a>
+                                    </li>
+                                    <li style="float:left;list-style: none outside none;">
+                                        <a href="#" title="Github">
+                                            <div class="github-team">
+                                                <i class="fa fa-github"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li style="float:left;list-style: none outside none;">
+                                        <a href="#" title="Twitter">
+                                            <div class="twitter-team">
+                                                <i class="fa fa-twitter"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team">
+                           <div class="teamimg">
+                            <img src="2.jpg" style="width: 170px; height: 175px; border-radius: 50%;border: 2px solid black;" alt="" >
+                           </div>
+                            <h4 style="text-align:center;margin-bottom: 2px;margin-top: 25px;">Leron</h4>
+                            <p style="text-align:center;">Founder / CEO</p>
+                            <p style="text-align:center;margin-top: -14px;margin-bottom:-8px;padding:23px;">I invented the idea when i realized that there was a huge injustice with the food being served in public school cafeaterias. We focus on that our students get a fair nutraution. </p>
+                            <div class="teamsocial">
+                                <ul>
+                                    <li style="margin-left:35px;float:left;list-style: none outside none;">
+                                        <a href="w" title="Facebook">
+                                            <div class="facebook-team">
+                                                <i class="fa fa-facebook"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li style="float:left;list-style: none outside none;">
+                                        <a href="https://linkedin.co" title="LinkedIn">
+                                            <div class="linkedin-team"><i class="fa fa-linkedin"></i></div>
+                                        </a>
+                                    </li>
+                                    <li style="float:left;list-style: none outside none;">
+                                        <a href="https://github.com/LeronDoesGaming" title="Github" target="newtab">
+                                            <div class="github-team">
+                                                <i class="fa fa-github"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li style="float:left;list-style: none outside none;">
+                                        <a href="https://twitter.com/LeronDoesGaming" title="Twitter" target="newtab">
+                                            <div class="twitter-team">
+                                                <i class="fa fa-twitter"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                
+         
+        </div>  
+        </div>
+        <div id="third">
+            <footer class="main">
+
+                <hr>
+                <ul class="icons">
+                  <!-- I just added google website to test it working or not. we will change that later-->
+                  <a href="https://www.facebook.com/ZtechNetwork"> <li><i class="fa fa-facebook"></i></li></a>
+                  <a href="https://github.com/ZtechNetwork"><li><i href="" class="fa fa-github"></i></li></a>
+                  <a href="https://www.linkedin.com/company/ztechnetwork/"><li><i class="fa fa-linkedin"></i></li></a>
+                  <a href="mailto:ztechnetwork.inc@gmail.com?Subject=Food%20Lab%20you can change it later" target="newtab"><li><i class="fa fa-envelope"></i></li></a>
+                </ul> 
+                
+                    
+               
+                
+              </footer>
+         
+        </div>
+        </div>
+        
+     
+      
+
+<script src="lib/js/main.js"></script>
+      
+</body>
+</html>
