@@ -12,6 +12,7 @@ html {
 }
 .navT {
 	-webkit-transition: all 0.25s;
+	transition: all 0.25s;
 	z-index: 111;
 	cursor: pointer;
 	width: 100%;
@@ -23,6 +24,7 @@ html {
 }
 .navT .icon {
 	-webkit-transition: all 0.25s;
+	transition: all 0.25s;
 	position: absolute;
 	width: 30px;
 	height: 1px;
@@ -32,6 +34,7 @@ html {
 }
 .navT .icon:before, .navT .icon:after {
 	-webkit-transition: all 0.25s;
+	transition: all 0.25s;
 	width: 30px;
 	height: 1px;
 	left: 0;
@@ -56,6 +59,7 @@ html {
 }
 .navT.active .icon {
 	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
 	background-color: transparent;
 	left: 10px;
 }
@@ -64,13 +68,16 @@ html {
 }
 .navT.active .icon:before {
 	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 .navT.active .icon:after {
 	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
 }
 #menu {
 	z-index: 111;
 	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
 	text-align: center;
 	position: fixed;
 	left: 0;
@@ -96,6 +103,7 @@ html {
 }
 #menu li {
 	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
 	margin-top: 20px;
 	padding: 5px 0;
 	color:white;
@@ -103,6 +111,7 @@ html {
 #menu a {
 	padding: 8px;
 	-webkit-transition: all 0.25s;
+	transition: all 0.25s;
 	cursor: pointer;
 }
 
@@ -126,6 +135,7 @@ html {
 	font-family: sans-serif;
 	font-weight: 100;
 	-webkit-transition: top 0.5s;
+	transition: top 0.5s;
 	position: absolute;
 	/* top: 100px; */
 	margin: 0 auto;
@@ -137,6 +147,7 @@ html {
 	font-family: sans-serif;
 	font-weight: 100;
 	-webkit-transition: top 0.5s;
+	transition: top 0.5s;
 	position: absolute;
 	top: -300px;
 	margin: 0 auto;
@@ -148,6 +159,7 @@ html {
 	font-family: sans-serif;
 	font-weight: 100;
 	-webkit-transition: top 0.5s;
+	transition: top 0.5s;
 	position: absolute;
 	top: -150px;
 	padding-top: 200px;
@@ -533,9 +545,6 @@ h4,
   /* left: 50%; */
   margin-left: 0px;
 }
-  .rolldown-list li {
-    
-  }
   
   .rolldown-list li:nth-child(2n) {
 	font-family: "Roboto",Helvetica,Arial,sans-serif;
@@ -663,7 +672,7 @@ h4,
 		
 }
 .meow2{
-	font-family:  "New Baskerville"; 
+	font-family: 'Montserrat', sans-serif;
 	color: black;
 	/* margin-top: 30px; */
 	width: 500px;
